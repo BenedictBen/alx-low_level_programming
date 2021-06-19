@@ -11,20 +11,21 @@
 int main(void)
 {
 	int i;
-	char l;
 
 	i = 48;
 	while  (i < 58)
 	{
 		putchar(i);
-		i++;
-	}
-
-	l = 'a';
-	while (l <= 'f')
-	{
-		putchar(l);
-		l++;
+		if (i !=  57)
+		{
+			putchar(44);
+			putchar(32);
+			i++;
+		}
+		else
+		{
+			i++;
+		}
 	}
 	putchar('\n');
 
