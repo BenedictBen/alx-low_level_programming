@@ -6,13 +6,23 @@
 
 
 
+/* betty style doc for function main goes there */
 
+/**
 
-int main(void)
+ * main - Entry point
+
+ *
+
+ * Return: Always 0 (Success)
+
+ */
+
+int main(void)                                /* Most important part of the program!  */
   
 {
   
-  int n;
+  int n;                                 /* Need a variable... */
   
 
   
@@ -20,27 +30,33 @@ int main(void)
   
   n = rand() - RAND_MAX / 2;
   
-  if (n > 0)
+  /* between the braces is the body of the if statement */
+  
+  if (n > 0)                                          /* If n is greater than 0 */
     
     {
       
-      printf("%i is positive\n", n);
+      printf("%i is positive\n", n);              /* Just to show you it works... */
       
     }
   
-  else if (n == 0)
+  /* between the braces is the body of the else if statement */
+  
+  else if (n == 0)                                    /* If n is equall to 0 */
     
     {
       
-      printf("%i is zero\n", n);
+      printf("%i is zero\n", n);                  /* Just to show you it works... */
       
     }
   
-  else if (n < 0)
+  /* between the braces is the body of the else if statement */
+  
+  else if (n < 0)                                    /* If n is equall to 0 */
     
     {
       
-      printf("%i is negative\n", n);
+      printf("%i is negative\n", n);             /* Just to show you it works... */
       
     }
   
@@ -49,4 +65,3 @@ int main(void)
   return (0);
   
 }
-
