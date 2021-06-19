@@ -1,52 +1,46 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int i, j, k, l;
+	int c, i, k, j;
 
-	i = j = k = 48; l = 49;
-	while  ((i < 58))
+	for (c = 48; c <= 57; c++)
 	{
-		putchar(i); putchar(j); putchar(32); putchar(k); putchar(l);
-		if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
+		for (i = 48; i <= 57; i++)
 		{
-			putchar('\n'); i++;
-		}
-		else
-		{
-			putchar(44); putchar(32);
-			if ((k == 57) && (l == 57))
+			for (k = 48; k <= 57; k++)
 			{
-				if (j < 56)
+				for (j = 48; j <= 57; j++)
 				{
-					l = ++j + 1; k = i;
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
+					{
+						putchar(c);
+						putchar(i);
+						putchar(' ');
+						putchar(k);
+						putchar(j);
+
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+					}
 				}
-				else if (j == 56)
-				{
-					j++; k = i + 1; l = 48;
-				}
-				else if (j == 57)
-				{
-					j = 48; l = 49; k = ++i;
-				}
-			}
-			else if (l < 57)
-			{
-				l++;
-			}
-			else
-			{
-				l = 48; k++;
 			}
 		}
 	}
+
+	putchar('\n');
+
 	return (0);
 }
