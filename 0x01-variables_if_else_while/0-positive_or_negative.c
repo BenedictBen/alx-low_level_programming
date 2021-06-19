@@ -18,11 +18,13 @@
 
  */
 
-int main(void)                                /* Most important part of the program!  */
+int main(void)
+  
+/* Most important part of the program!  */
   
 {
   
-  int n;                                 /* Need a variable... */
+  int n;
   
 
   
@@ -32,31 +34,31 @@ int main(void)                                /* Most important part of the prog
   
   /* between the braces is the body of the if statement */
   
-  if (n > 0)                                          /* If n is greater than 0 */
+  if (n > 0)
     
     {
       
-      printf("%i is positive\n", n);              /* Just to show you it works... */
+      printf("%i is positive\n", n);
       
     }
   
   /* between the braces is the body of the else if statement */
   
-  else if (n == 0)                                    /* If n is equall to 0 */
+  else if (n == 0)
     
     {
       
-      printf("%i is zero\n", n);                  /* Just to show you it works... */
+      printf("%i is zero\n", n);
       
     }
   
   /* between the braces is the body of the else if statement */
   
-  else if (n < 0)                                    /* If n is equall to 0 */
+  else if (n < 0)
     
     {
       
-      printf("%i is negative\n", n);             /* Just to show you it works... */
+      printf("%i is negative\n", n);
       
     }
   
