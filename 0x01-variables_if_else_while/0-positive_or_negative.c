@@ -1,7 +1,5 @@
 #include <stdlib.h>
-
 #include <time.h>
-
 #include <stdio.h>
 
 
@@ -18,9 +16,9 @@
 
  */
 
-int main(void)
-  
-/* Most important part of the program!  */
+
+
+int main(void)   /* Most important part of the program!  */
   
 {
   
@@ -31,9 +29,7 @@ int main(void)
   srand(time(0));
   
   n = rand() - RAND_MAX / 2;
-  
   /* between the braces is the body of the if statement */
-  
   if (n > 0)
     
     {
@@ -41,9 +37,7 @@ int main(void)
       printf("%i is positive\n", n);
       
     }
-  
   /* between the braces is the body of the else if statement */
-  
   else if (n == 0)
     
     {
@@ -51,9 +45,7 @@ int main(void)
       printf("%i is zero\n", n);
       
     }
-  
   /* between the braces is the body of the else if statement */
-  
   else if (n < 0)
     
     {
