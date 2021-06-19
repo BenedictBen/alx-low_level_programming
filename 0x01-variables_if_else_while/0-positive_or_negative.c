@@ -18,7 +18,9 @@
 
 
 
-int main(void)   /* Most important part of the program!  */
+int main(void)
+  
+/* Most important part of the program!  */
   
 {
   
@@ -29,24 +31,30 @@ int main(void)   /* Most important part of the program!  */
   srand(time(0));
   
   n = rand() - RAND_MAX / 2;
-  /* between the braces is the body of the if statement */
+  
   if (n > 0)
+    
+    /* between the braces is the body of the if statement */
     
     {
       
       printf("%i is positive\n", n);
       
     }
-  /* between the braces is the body of the else if statement */
+  
   else if (n == 0)
+    
+    /* between the braces is the body of the else if statement */
     
     {
       
       printf("%i is zero\n", n);
       
     }
-  /* between the braces is the body of the else if statement */
+  
   else if (n < 0)
+    
+    /* between the braces is the body of the else if statement */
     
     {
       
