@@ -1,49 +1,33 @@
-#ifndef HOLBERTON_H
-
-#define HOLBERTON_H
+#include "holberton.h"
 
 
 
-/*
+/**
 
- * File: holberton.h
+ * main - Prints a character using _putchar
 
- * Auth: Brennan D Baraban
+ *
 
- * Desc: Header file containing declarations for all functions
-
- *       used in the 0x02-functions_nested_loops directory.
+ * Return: 0 - Success
 
  */
 
 
 
-int _putchar(char c);
+int main(void)
+  
+{
+  
+  char c[] = "Holberton\n";
+  
+  int i;
+  
 
-void print_alphabet(void);
-
-void print_alphabet_x10(void);
-
-int _islower(int c);
-
-int _isalpha(int c);
-
-int print_sign(int n);
-
-int _abs(int);
-
-int print_last_digit(int);
-
-void jack_bauer(void);
-
-void times_table(void);
-
-int add(int, int);
-
-void print_to_98(int n);
-
-void print_times_table(int n);
-
-
-
-#endif
+  
+  for (i = 0; i <= 9; i++)
+    
+    _putchar(c[i]);
+  
+  return (0);
+  
+}
